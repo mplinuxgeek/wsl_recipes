@@ -11,6 +11,6 @@
     docker exec -it CentOS_8 bash -c 'cat /dev/null > ~/.bash_history && history -c && exit'
     docker stop CentOS_8
     docker export CentOS_8 -o .\CentOS_8.tar
-    mkdir C:\WSL\CentOS_8
+    mkdir -force C:\WSL\CentOS_8
     wsl --import CentOS_8 C:\WSL\CentOS_8 CentOS_8.tar
     wsl -d CentOS_8
