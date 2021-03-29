@@ -1,4 +1,5 @@
     docker pull centos:latest
+    docker run --tty --detach --name CentOS_8 centos
     docker exec -it CentOS_8 dnf -y update
     docker exec -it CentOS_8 dnf install -y bash-completion bind-utils cracklib-dicts diff epel-release glibc-langpack-en keychain man minicom mlocate nano net-tools nmap openssh-clients openssl passwd psmisc sudo telnet tmux tree vim wget yum-utils zsh
     docker exec -it CentOS_8 dnf install -y htop p7zip
